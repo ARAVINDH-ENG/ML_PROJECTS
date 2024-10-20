@@ -18,7 +18,7 @@ The dataset used for this project contains information related to pancreatic can
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/ARAVINDH-ENG/Pancreatic-Cancer-Detection.git
+   git clone https://github.com/ARAVINDH-ENG/ML_PROJECTS/tree/main/Pancreatic-Cancer-Prediction
 
 
 ## Data Preprocessing
