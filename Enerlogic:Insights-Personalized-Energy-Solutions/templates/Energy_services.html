@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Consumption Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Energy Consumption Form</h2>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="monthlyEnergy">Monthly Energy Consumption (kWh):</label>
+        <input type="number" id="monthlyEnergy" name="monthlyEnergy" step="0.01" required>
+
+        <label for="peakUsage">Peak Usage (kWh):</label>
+        <input type="number" id="peakUsage" name="peakUsage" step="0.01" required>
+
+        <label for="offPeakUsage">Off-Peak Usage (kWh):</label>
+        <input type="number" id="offPeakUsage" name="offPeakUsage" step="0.01" required>
+
+        <label for="annualIncome">Annual Income ($):</label>
+        <input type="number" id="annualIncome" name="annualIncome" step="0.01" required>
+
+        <label for="homeSize">Home Size (sqft):</label>
+        <input type="number" id="homeSize" name="homeSize" step="0.01" required>
+
+        <label for="clv">Customer Lifetime Value (CLV):</label>
+        <input type="number" id="clv" name="clv" step="0.01" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+        </select>
+
+        <label for="location">Location:</label>
+        <select id="location" name="location" required>
+            <option value="">Select Location</option>
+            <option value="Urban">Urban</option>
+            <option value="Suburban">Suburban</option>
+            <option value="Rural">Rural</option>
+        </select>
+
+        <label for="buildingType">Building Type:</label>
+        <select id="buildingType" name="buildingType" required>
+            <option value="">Select Building Type</option>
+            <option value="Residential">Residential</option>
+            <option value="Commercial">Commercial</option>
+        </select>
+
+        <label for="renewableEnergy">Renewable Energy Usage (kWh):</label>
+        <input type="number" id="renewableEnergy" name="renewableEnergy" step="0.01" required>
+
+        <label for="educationLevel">Education Level:</label>
+        <select id="educationLevel" name="educationLevel" required>
+            <option value="">Select Education Level</option>
+            <option value="Master's">Master's</option>
+            <option value="phD">PhD</option>
+            <option value="Bachelor's">Bachelor's</option>
+        </select>
+
+        <label for="employmentStatus">Employment Status:</label>
+        <select id="employmentStatus" name="employmentStatus" required>
+            <option value="">Select Employment Status</option>
+            <option value="Retired">Retired</option>
+            <option value="Self-Employed">Self-Employed</option>
+            <option value="Employed">Employed</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
