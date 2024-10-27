@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="number"],
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>User Input Form</h2>
+    <form action="/submit" method="post">
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="location">Location:</label><br>
+        <input type="text" id="location" name="location" required><br><br>
+
+        <label for="building_type">Building Type:</label><br>
+        <input type="text" id="building_type" name="building_type" required><br><br>
+
+        <label for="monthly_energy_consumption">Monthly Energy Consumption (kWh):</label><br>
+        <input type="number" id="monthly_energy_consumption" name="monthly_energy_consumption" step="0.01" required><br><br>
+
+        <label for="peak_usage">Peak Usage (kWh):</label><br>
+        <input type="number" id="peak_usage" name="peak_usage" step="0.01" required><br><br>
+
+        <label for="off_peak_usage">Off-Peak Usage (kWh):</label><br>
+        <input type="number" id="off_peak_usage" name="off_peak_usage" step="0.01" required><br><br>
+
+        <label for="annual_income">Annual Income ($):</label><br>
+        <input type="number" id="annual_income" name="annual_income" step="0.01" required><br><br>
+
+        <label for="home_size">Home Size (sqft):</label><br>
+        <input type="number" id="home_size" name="home_size" required><br><br>
+
+        <label for="clv">Customer Lifetime Value (CLV):</label><br>
+        <input type="number" id="clv" name="clv" step="0.01" required><br><br>
+
+        <label for="renewable_energy_usage">Renewable Energy Usage:</label><br>
+        <input type="text" id="renewable_energy_usage" name="renewable_energy_usage" required><br><br>
+
+        <label for="education_level">Education Level:</label><br>
+        <input type="text" id="education_level" name="education_level" required><br><br>
+
+        <label for="employment_status">Employment Status:</label><br>
+        <input type="text" id="employment_status" name="employment_status" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
